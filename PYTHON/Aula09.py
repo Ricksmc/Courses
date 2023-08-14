@@ -1,0 +1,13 @@
+frase = ('Meu nome é Ricardo')
+print(frase.count('o'))
+print(frase.upper().count('o'))
+print(len(frase))
+print('')
+print('''PARA MOSTRAR NA TELA TEXTO
+EM VÁRIAS LINHAS NA IDE PODE SER DESSA FORMA''')
+print(frase.replace('Ricardo','Joaquim'))
+print('nome' in frase)
+print(frase.split())
+pedaco = frase.split()
+print(pedaco[3])
+print(pedaco[3][0])
