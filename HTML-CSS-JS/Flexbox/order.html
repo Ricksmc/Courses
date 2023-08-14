@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            display: flex;
+            border: 2px solid black;
+        }
+        .item{
+            flex: 1;
+            background: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .o1{order: 1;}
+        .o2{order: 2;}
+        .o3{order: 3;}
+        .o4{order: 4;}
+        .direction{flex-direction: column;}
+    </style>
+</head>
+<body>
+    <h1>Linha</h1>
+    <p>Order: sem aplicação do order</p>
+    <div class="flex-container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <p>Order: com aplicação do order</p>
+    <div class="flex-container">
+        <div class="item o3">A</div>
+        <div class="item o2">B</div>
+        <div class="item o4">C</div>
+        <div class="item o1">D</div>
+    </div>
+    <h1>Coluna</h1>
+    <p>Order: sem aplicação do order</p>
+    <div class="flex-container direction">
+        <div class="item ">A</div>
+        <div class="item ">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <p>Order: com aplicação do order</p>
+    <div class="flex-container direction">
+        <div class="item o3">A</div>
+        <div class="item o2">B</div>
+        <div class="item o4">C</div>
+        <div class="item o1">D</div>
+    </div>
+</body>
+</html>
